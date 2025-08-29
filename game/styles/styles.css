@@ -1,0 +1,36 @@
+#background-menu {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    /* Position is fixed relative to viewport */
+    top: 0;                                             /* Shifts item to top most edge of viewport */
+    left: 0;                                            /* Shifts item to left most edge of viewport */
+    width: 100vw;                                       /* Set width to 100% of viewport width */
+    height: 100vh;                                      /* Set height to 100% of viewport height */
+    background-image: url(./../assets/menu-image.png);  /* Background image */
+    background-size: cover;                             /* Scale background image to cover entire parent element */
+    background-position: center center;                 /* Center image in center of page */   
+    background-repeat: no-repeat;                       /* Prevent image repetition */
+    z-index: -1;                                        /* Set this to be in the back */
+}
+
+
+.modal {
+    width: 30%;
+    height: 60%;
+    background-color: rgb(242, 225, 157);
+    border: 5px solid burlywood;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.center-text-header {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    border: 3px solid burlywood;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
