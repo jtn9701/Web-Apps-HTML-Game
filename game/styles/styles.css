@@ -16,17 +16,12 @@
 
 .modal {
     width: 30%;
-    height: 45%;
+    height: 50%;
     background-color: rgb(242, 225, 157);
     border: 5px solid burlywood;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     z-index: 1;
-}
-
-.container {
-    width: 90%;
-    margin: auto;
 }
 
 .center-text-header {
@@ -41,15 +36,27 @@
 }
 
 .large-centered-button{
+    text-align: center;
     display: block;
     margin: 0 auto;
     margin-top: 5px;
-    width: 100%;                                           /* span full width of parent container */
-    padding: 5% 10;                                        /* remove horizontal padding, keep vertical */
-    font-size: larger;
-    white-space: nowrap;                                   /* make text for button on 1 line */
-    background-color: burlywood;
+    width: 98%;                                          /* span full width of parent container */
+    padding: 5% 0px;                                     /* remove horizontal padding, keep vertical */
+    font-size: x-large;
+    white-space: nowrap;                                 /* make text for button on 1 line */
     font-weight: bold;
     border: 3px solid black;
     border-radius: 8px;
+    text-decoration: None;
+    color: black;
+    z-index: 2;
 }
+
+.clickable {
+    cursor: pointer;
+}
+
+.button-color-global {
+    background-color: burlywood;
+}
+
