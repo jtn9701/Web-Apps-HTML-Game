@@ -16,7 +16,7 @@
 
 .modal {
     width: 30%;
-    height: 60%;
+    height: 45%;
     background-color: rgb(242, 225, 157);
     border: 5px solid burlywood;
     border-radius: 8px;
@@ -24,13 +24,32 @@
     z-index: 1;
 }
 
+.container {
+    width: 90%;
+    margin: auto;
+}
+
 .center-text-header {
     text-align: center;
     font-size: xx-large;
-    font-weight: bold;
+    font-weight: bolder;
     border: 3px solid burlywood;
     height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.large-centered-button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 100%;                                           /* span full width of parent container */
+    padding: 5% 10;                                        /* remove horizontal padding, keep vertical */
+    font-size: larger;
+    white-space: nowrap;                                   /* make text for button on 1 line */
+    background-color: burlywood;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 8px;
 }
