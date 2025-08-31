@@ -16,7 +16,7 @@
 
 .modal {
     width: 30%;
-    height: 50%;
+    height: 60%;
     background-color: rgb(242, 225, 157);
     border: 5px solid burlywood;
     border-radius: 8px;
@@ -60,3 +60,16 @@
     background-color: burlywood;
 }
 
+#how-to-play-text-box {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: center;
+    padding: 5% 0px;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: burlywood;
+    z-index: 2;
+}
