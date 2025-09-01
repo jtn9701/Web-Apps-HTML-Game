@@ -1,0 +1,26 @@
+<!-- A bit map will be to store info about cats that were found -->
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title> Cat Rescue </title>
+        <link rel="icon" href="./../assets/Favicon.png">
+        <link rel="stylesheet" href="./../styles/styles.css">
+    </head>
+    <body class="button-color-global">
+        <div>
+            Stats: <hr>
+            <table>
+                <tr>
+                    <th> &#128008; </th> <!-- emoji: 🐈 -->
+                <tr>
+                    <td id='cp'>0</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
+<script>
+    var queryString = new URLSearchParams(location.search)
+    cp.innerText = queryString.get('cp');
+</script>
