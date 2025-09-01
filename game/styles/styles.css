@@ -73,3 +73,31 @@
     background-color: burlywood;
     z-index: 2;
 }
+
+/* Character model size */
+.main-character-model {
+    width: 2.5vw;
+    height: 5.5vh;
+}
+.villain-character-model {
+    width: 5vw;
+    height: 7vh;
+}
+
+/* Character positioning in intro */
+#intro-character-location {
+    position: absolute;
+    top: 60vh;
+    left: 40vw;
+}
+#intro-friend-location {
+    position: absolute;
+    top: 60vh;
+    right: 40vw
+}
+#intro-villain-location {
+    position: absolute;
+    top: 60vh;
+    right: 35vw;
+}
+
