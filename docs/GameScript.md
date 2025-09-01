@@ -7,6 +7,7 @@ Your mission: find your cats before it is too late. Each cat that you recover wi
 
 # Levels
 A cat is hiding somewhere in this area. Find them before Dogtavius’ goons do! </br>
+There will be 3 cats per level for now</br>
 - If a cat is found:
     - You have saved Gojo [for example]! They will now rejoin your side and fight for you!</br>
 - If player misses cat
