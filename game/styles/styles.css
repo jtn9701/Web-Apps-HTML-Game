@@ -1,3 +1,4 @@
+/* Scene Backgrounds */
 #background-menu {           
     display: grid;
     place-items: center;                           
@@ -11,6 +12,22 @@
     background-position: center center;                 /* Center image in center of page */   
     background-repeat: no-repeat;                       /* Prevent image repetition */
     z-index: -1;                                        /* Set this to be in the back */
+}
+
+#background-overworld1 {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/WorldMap1.png);  
+    background-size:contain;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
 }
 
 
@@ -35,6 +52,7 @@
     justify-content: center;
 }
 
+/* Button styles */
 .large-centered-button{
     text-align: center;
     display: block;
@@ -85,6 +103,49 @@
 
 .button-color-global {
     background-color: burlywood;
+}
+
+/* button styles for overworlds */
+.button-area-selector {
+    text-align: center;
+    text-justify: center;
+    display: block;
+    margin-top: 5px;
+    width: 10vw;
+    height: 4vh;
+    font-size: x-large;
+    white-space: nowrap;                                 
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 8px;
+    text-decoration: None;
+    color: black;
+    z-index: 2;
+}
+#button-worldmap1-forest {
+    position: absolute;
+    bottom: 28vh;
+    right: 42vw;
+}
+#button-worldmap1-plains {
+    position: absolute;
+    bottom: 40vh;
+    right: 50vw;
+}
+#button-worldmap1-valley {
+    position: absolute;
+    bottom: 60vh;
+    right: 42vw;
+}
+#button-worldmap1-home {
+    position: absolute;
+    bottom: 20vh;
+    right: 40vw;
+}
+#button-worldmap1-bandits {
+    position: absolute;
+    bottom: 55vh;
+    right: 54vw;
 }
 
 #how-to-play-text-box {
