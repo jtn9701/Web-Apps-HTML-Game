@@ -52,6 +52,33 @@
     z-index: 2;
 }
 
+.global-button-type {
+    text-align: center;
+    text-justify: center;
+    display: block;
+    margin-top: 5px;
+    width: 15vw;
+    height: 5vh;
+    font-size: x-large;
+    white-space: nowrap;                                 
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 8px;
+    text-decoration: None;
+    color: black;
+    z-index: 2;
+}
+
+.overworld-button-location {
+    position: absolute;
+    bottom: 1vh;
+    left: 42vw;
+}
+
+.overworld-button-color {
+    background-color: rgb(90, 179, 32);
+}
+
 .clickable {
     cursor: pointer;
 }
@@ -101,3 +128,43 @@
     right: 35vw;
 }
 
+/* General Text Box */
+.general-text-box {
+    position: absolute;
+    bottom: 10vh;
+    left: 25vw;
+    width: 50vw;
+    height: 15vh;
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: burlywood;
+    padding: 5px;
+    z-index: 2;
+}
+
+/* General closeup image */
+.closup-image {
+    height: 25vh;
+    width: 15vw;
+    border: 5px solid burlywood;
+    border-radius: 8px;
+    border-width: 10px;
+}
+.main-character-closeup-position {
+    bottom: 5vh;
+    left: 5vw;
+    position: absolute;
+}
+.friend-character-closeup-position {
+    bottom: 5vh;
+    right: 5vw;
+    position: absolute;
+}
+.villain-character-closeup-position {
+    bottom: 35vh;
+    right: 1vw;
+    position: absolute;
+}
