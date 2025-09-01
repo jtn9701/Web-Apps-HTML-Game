@@ -11,16 +11,14 @@
             Stats: <hr>
             <table>
                 <tr>
+                    <th> &#9876;&#65039; </th> <!-- emoji: ⚔️ -->
                     <th> &#128008; </th> <!-- emoji: 🐈 -->
                 <tr>
-                    <td id='cp'>0</td>
+                    <td id="ap">0</td>
+                    <td id="cats">0</td>
                 </tr>
             </table>
         </div>
+        <script src="./../scripts/stats.js"></script>
     </body>
 </html>
-
-<script>
-    var queryString = new URLSearchParams(location.search)
-    cp.innerText = queryString.get('cp');
-</script>
