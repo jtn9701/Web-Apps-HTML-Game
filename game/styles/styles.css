@@ -30,6 +30,22 @@
     z-index: -1;                                        
 }
 
+#background-overworld2 {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/WorldMap2.png);  
+    background-size:contain;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
 
 .modal {
     width: 30%;
@@ -146,6 +162,33 @@
     position: absolute;
     bottom: 55vh;
     right: 54vw;
+}
+#button-worldmap2-caves {
+    position: absolute;
+    bottom: 45vh;
+    right: 80vw;
+}
+
+#button-worldmap2-tundra {
+    position: absolute;
+    bottom: 55vh;
+    right: 20vw;
+}
+#button-worldmap2-shop {
+    position: absolute;
+    bottom: 80vh;
+    right: 60vw;
+}
+#button-worldmap2-final {
+    position: absolute;
+    bottom: 20vh;
+    right: 15vw;
+}
+
+#button-worldmap2-desert {
+    position: absolute;
+    bottom: 10vh;
+    right: 40vw;
 }
 
 #how-to-play-text-box {
