@@ -360,3 +360,11 @@
     top: 70vh;
     right: 70=50vw;
 }
+
+/* Temporary */
+
+#overrworld2-button-location {
+    position: absolute;
+    bottom: 1vh;
+    left: 55vw;
+}
