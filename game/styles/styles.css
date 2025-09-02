@@ -30,6 +30,21 @@
     z-index: -1;                                        
 }
 
+#background-forest {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/Forest.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
 
 .modal {
     width: 30%;
@@ -245,4 +260,21 @@
     position: absolute;
     bottom: 25vh;
     left: 45vw;
+}
+
+/* Forest Cat Locations */
+#forest-cat-1 {
+    position: absolute;
+    top: 60vh;
+    left: 20vw;
+}
+#forest-cat-2 {
+    position: absolute;
+    top: 42vh;
+    right: 38.7vw;
+}
+#forest-cat-3 {
+    position: absolute;
+    bottom: 23vh;
+    left: 40vw;
 }
