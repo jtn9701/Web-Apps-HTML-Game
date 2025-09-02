@@ -46,6 +46,22 @@
     z-index: -1;                                        
 }
 
+#background-plains {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/Plains.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
 .modal {
     width: 30%;
     height: 60%;
@@ -277,4 +293,21 @@
     position: absolute;
     bottom: 23vh;
     left: 40vw;
+}
+
+/* Plains Cat Locations */
+#plains-cat-1 {
+    position: absolute;
+    top: 30vh;
+    left: 12vw;
+}
+#plains-cat-2 {
+    position: absolute;
+    top: 70vh;
+    right: 20vw;
+}
+#plains-cat-3 {
+    position: absolute;
+    top: 10vh;
+    right: 15vw;
 }
