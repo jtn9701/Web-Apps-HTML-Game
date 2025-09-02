@@ -62,6 +62,22 @@
     z-index: -1;                                        
 }
 
+#background-valley {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/RockyArea.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
 .modal {
     width: 30%;
     height: 60%;
@@ -310,4 +326,21 @@
     position: absolute;
     top: 10vh;
     right: 15vw;
+}
+
+/* Valley Cat Locations */
+#valley-cat-1 {
+    position: absolute;
+    bottom: 25vh;
+    left: 25vw;
+}
+#valley-cat-2 {
+    position: absolute;
+    top: 25vh;
+    left: 40vw;
+}
+#valley-cat-3 {
+    position: absolute;
+    top: 70vh;
+    right: 70=50vw;
 }
