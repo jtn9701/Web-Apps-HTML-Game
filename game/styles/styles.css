@@ -46,6 +46,85 @@
     z-index: -1;                                        
 }
 
+#background-overworld2 {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/WorldMap2.png);  
+    background-size:contain;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
+#background-forest {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/Forest.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
+#background-plains {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/Plains.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
+#background-valley {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/RockyArea.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
+#background-bandit-camp {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/BanditCamp.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
 
 .modal {
     width: 30%;
@@ -271,4 +350,80 @@
     bottom: 35vh;
     right: 1vw;
     position: absolute;
+}
+
+/* Home Cat Locations */
+#home-cat-1 {
+    position: absolute;
+    top: 30vh;
+    left: 20vw;
+}
+#home-cat-2 {
+    position: absolute;
+    top: 38vh;
+    right: 33.5vw;
+}
+#home-cat-3 {
+    position: absolute;
+    bottom: 25vh;
+    left: 45vw;
+}
+
+/* Forest Cat Locations */
+#forest-cat-1 {
+    position: absolute;
+    top: 60vh;
+    left: 20vw;
+}
+#forest-cat-2 {
+    position: absolute;
+    top: 42vh;
+    right: 38.7vw;
+}
+#forest-cat-3 {
+    position: absolute;
+    bottom: 23vh;
+    left: 40vw;
+}
+
+/* Plains Cat Locations */
+#plains-cat-1 {
+    position: absolute;
+    top: 30vh;
+    left: 12vw;
+}
+#plains-cat-2 {
+    position: absolute;
+    top: 70vh;
+    right: 20vw;
+}
+#plains-cat-3 {
+    position: absolute;
+    top: 10vh;
+    right: 15vw;
+}
+
+/* Valley Cat Locations */
+#valley-cat-1 {
+    position: absolute;
+    bottom: 25vh;
+    left: 25vw;
+}
+#valley-cat-2 {
+    position: absolute;
+    top: 25vh;
+    left: 40vw;
+}
+#valley-cat-3 {
+    position: absolute;
+    top: 70vh;
+    right: 70=50vw;
+}
+
+/* Temporary */
+
+#overrworld2-button-location {
+    position: absolute;
+    bottom: 1vh;
+    left: 55vw;
 }
