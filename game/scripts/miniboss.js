@@ -1,6 +1,4 @@
 function decrementMinibossHP() {
-    var minibossHP = 8;
-
     if (minibossHP > 0) {
         minibossHP--;
         hpText.innerHTML = `The enemy has ${minibossHP} hp. Click on him to attack.`;
@@ -13,6 +11,9 @@ function decrementMinibossHP() {
 
         const overworld2button = document.getElementById("overrworld2");
         overworld2button.style.visibility = "visible";
+
+        const minibossImage = document.getElementById("miniboss-closeup-position");
+        minibossImage.style.visibility = "hidden";
     }
 
 }
