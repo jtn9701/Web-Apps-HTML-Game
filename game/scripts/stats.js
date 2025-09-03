@@ -1,14 +1,18 @@
 var queryString = new URLSearchParams(location.search)
 
-// 21 cats in total. default to all 0s (not found)
-var catsBitmap = queryString.get("cats") || "00000000000000000000"
+// 21 cats in total. default to all 0s (not found) 
+var catsBitArrayString = queryString.get("cats") || "00000000000000000000"
 
-// Use regex to count number of 1's in bitmap using global flag
-// ?.length uses optional chainging to avoid null errors
-var catsFound = catsBitmap.match(/1/g)?.length || 0;
+// Turn catsBitArrayString into a bit array
+var catsBitArray = catsBitArrayString.split("").slice(0, 21).map(bit => parseInt(bit))
 
-// default to not evil
+// Count number of 1's in bit array
+var catsFound = catsBitArray.filter(bit => bit === 1)
+
+// default to not evil (0)
 var isEvil = queryString.get("evil") || "0"
 
-ap.innerText = catsFound;
+var multiplier = isEvil === 1 ? 2 : 1;
+
+ap.innerText = catsFound * multiplier;
 cats.innerText = catsFound + "/21";
