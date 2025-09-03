@@ -7,13 +7,22 @@
     </head>
     <body>
         <div id="background-bandit-camp">
-            <a href="./../scenes/world-map-1.html" class="global-button-type overworld-button-location overworld-button-color clickable">Overworld</a>
-            <a href="./../scenes/worldmap_2.html" class="global-button-type overworld-button-location overworld-button-color clickable" id="overrworld2-button-location">Overworld 2</a>
+            <a href="./../scenes/worldmap1.html" class="global-button-type overworld-button-location overworld-button-color clickable" id="overworld">
+                Overworld
+            </a>
+            <a href="./../scenes/worldmap_2.html" class="global-button-type overworld-button-location overworld-button-color clickable" id="overrworld2_button_location">
+                Overworld 2
+            </a>
             <img class="closup-image" src="./../assets/Miniboss.png">
             <div class="general-text-box">
                     <p>You found one of the catnapper's goons!</p>
             </div>
         </div>
-        <iframe src="stats.html" id="inventory" height=100 width="125"></iframe>
+        <iframe src="stats.html" id="stats" height=100 width="125"></iframe>
+        <script>
+            stats.src += location.search;
+            overworld.href += location.search;
+            overrworld2_button_location.href += location.search;
+        </script>
     </body>
 </html>

@@ -7,11 +7,24 @@
     </head>
     <body>
         <div id="background-plains">
-            <a href="./../scenes/world-map-1.html" class="global-button-type overworld-button-location overworld-button-color clickable">Overworld</a>
-            <img class="main-character-model clickable" id="plains-cat-1" src="./../assets/HomeCat1.png">
-            <img class="main-character-model clickable" id="plains-cat-2" src="./../assets/HomeCat2.png">
-            <img class="main-character-model clickable" id="plains-cat-3" src="./../assets/HomeCat3.png">
+            <a href="./../scenes/worldmap1.html" class="global-button-type overworld-button-location overworld-button-color clickable" id="overworld">
+                Overworld
+            </a>
+            <img class="main-character-model clickable" id="plains-cat-1" src="./../assets/HomeCat1.png" onclick="changeCatsStringQueryParameter(6)">
+            <img class="main-character-model clickable" id="plains-cat-2" src="./../assets/HomeCat2.png" onclick="changeCatsStringQueryParameter(7)">
+            <img class="main-character-model clickable" id="plains-cat-3" src="./../assets/HomeCat3.png" onclick="changeCatsStringQueryParameter(8)">
         </div>
-        <iframe src="stats.html" id="inventory" height=100 width="125"></iframe>
+        <iframe src="stats.html" id="stats" height=100 width="125"></iframe>
+        <script>
+            stats.src += location.search;
+            overworld.href += location.search;
+        </script>
+        <script src="./../scripts/CatBitArray.js"></script>
+        <script src="./../scripts/CatVisibility.js"></script>
+        <script>
+            document.getElementById("plains-cat-1").style.visibility = makeCatInvisibleIfFound(6);
+            document.getElementById("plains-cat-2").style.visibility = makeCatInvisibleIfFound(7);
+            document.getElementById("plains-cat-3").style.visibility = makeCatInvisibleIfFound(8);
+        </script>
     </body>
 </html>

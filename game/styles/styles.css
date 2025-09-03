@@ -217,27 +217,27 @@
     color: black;
     z-index: 2;
 }
-#button-worldmap1-forest {
+#button_worldmap1_forest {
     position: absolute;
     bottom: 28vh;
     right: 42vw;
 }
-#button-worldmap1-plains {
+#button_worldmap1_plains {
     position: absolute;
     bottom: 40vh;
     right: 50vw;
 }
-#button-worldmap1-valley {
+#button_worldmap1_valley {
     position: absolute;
     bottom: 60vh;
     right: 42vw;
 }
-#button-worldmap1-home {
+#button_worldmap1_home {
     position: absolute;
     bottom: 20vh;
     right: 40vw;
 }
-#button-worldmap1-bandits {
+#button_worldmap1_bandits {
     position: absolute;
     bottom: 55vh;
     right: 54vw;
@@ -421,8 +421,7 @@
 }
 
 /* Temporary */
-
-#overrworld2-button-location {
+#overrworld2_button_location {
     position: absolute;
     bottom: 1vh;
     left: 55vw;

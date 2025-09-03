@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Cat Rescue </title>
+        <link rel="icon" href="./../assets/Favicon.png">
+        <link rel="stylesheet" href="./../styles/styles.css">
+    </head>
+    <body>
+        <div id="background-overworld1">
+            <a href="./../scenes/forest.html" class="button-area-selector button-color-global clickable" id="button_worldmap1_forest">Forest</a>
+            <a href="./../scenes/plains.html" class="button-area-selector button-color-global clickable" id="button_worldmap1_plains">Plains</a>
+            <a href="./../scenes/rocky-area.html" class="button-area-selector button-color-global clickable" id="button_worldmap1_valley">Valley</a>
+            <a href="./../scenes/home.html" class="button-area-selector button-color-global clickable" id="button_worldmap1_home">Home</a>
+            <a href="./../scenes/bandits.html" class="button-area-selector button-color-global clickable" id="button_worldmap1_bandits">Bandits</a>
+        </div>
+        <iframe src="stats.html" id="stats" height=100 width="125"></iframe>
+        <script>
+            stats.src += location.search;
+            button_worldmap1_home.href += location.search;
+            button_worldmap1_forest.href += location.search;
+            button_worldmap1_plains.href += location.search;
+            button_worldmap1_valley.href += location.search;
+            button_worldmap1_bandits.href += location.search;
+        </script>
+    </body>
+</html>
