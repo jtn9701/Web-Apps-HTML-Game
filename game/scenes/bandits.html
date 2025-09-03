@@ -7,23 +7,44 @@
     </head>
     <body>
         <audio class="audio-button-general" loop autoplay="true" src="./../assets/audio/Miniboss-OctopathTraveller.mp3" type="audio/mp3"></audio>
+        <a href="./../../index.html" class="global-button-type exit-button-location exit-button-color clickable">Exit</a>
         <div id="background-bandit-camp">
             <a href="./../scenes/worldmap1.html" class="global-button-type overworld-button-location overworld-button-color clickable" id="overworld">
                 Overworld
             </a>
-            <a href="./../scenes/worldmap_2.html" class="global-button-type overworld-button-location overworld-button-color clickable" id="overrworld2_button_location">
+            <a href="./../scenes/worldmap_2.html" class="global-button-type overworld-button-location overworld-button-color clickable" id="overrworld2" style="visibility: hidden;">
                 Overworld 2
             </a>
-            <img class="closup-image" src="./../assets/Miniboss.png">
+            <img class="closup-image closeup-image-border-red shake-hover shake-click clickable" id="miniboss-closeup-position" src="./../assets/Miniboss.png" onclick="decrementMinibossHP()">
             <div class="general-text-box">
-                    <p>You found one of the catnapper's goons!</p>
+                    <p id="battleText">You found one of the catnapper's goons!</p>
+                    <p id="hpText">The enemy has 8 hp. Click on him to attack.</p>
             </div>
         </div>
         <iframe class="iframe-location" src="stats.html" id="stats" height=100 width="125"></iframe>
         <script>
             stats.src += location.search;
             overworld.href += location.search;
-            overrworld2_button_location.href += location.search;
+            overrworld2 += location.search;
+
+            var queryString = new URLSearchParams(location.search);
+
+            // Same calculation as in stats
+            // TODO figure out how to get it from iframe
+            var ap = queryString.get("cats").split("").slice(0, 21).map(bit => parseInt(bit)).filter(bit => bit === 1).length * (queryString.get("evil") === "1" ? 2 : 1);
+
+            var minibossHP = 8;
+
+
+            if (ap < minibossHP) {
+                document.getElementById("battleText").innerHTML = "You found one of the catnapper's goons!<br>But you don't have enough AP to attack him.";
+                document.getElementById("hpText").innerHTML = "You need to find more cats";
+                document.getElementById("miniboss-closeup-position").style.pointerEvents = "none";
+            } else {
+                document.getElementById("battleText").innerHTML = "You found one of the catnapper's goons!";
+                document.getElementById("hpText").innerHTML = `The enemy has ${minibossHP} hp. Click on him to attack.`;
+            }
         </script>
+        <script src="./../scripts/miniboss.js"> </script>
     </body>
 </html>
