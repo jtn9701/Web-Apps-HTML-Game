@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./../styles/styles.css">
     </head>
     <body>
+        <audio class="audio-button-general" loop autoplay="true" src="./../assets/audio/Valley-OctopathTraveller.mp3" type="audio/mp3"></audio>
         <div id="background-valley">
             <a href="./../scenes/worldmap1.html" class="global-button-type overworld-button-location overworld-button-color clickable" id="overworld">
                 Overworld
@@ -14,7 +15,7 @@
             <img class="main-character-model clickable" id="valley-cat-2" src="./../assets/HomeCat2.png"onclick="changeCatsStringQueryParameter(10)">
             <img class="main-character-model clickable" id="valley-cat-3" src="./../assets/HomeCat3.png"onclick="changeCatsStringQueryParameter(11)">
         </div>
-        <iframe src="stats.html" id="stats" height=100 width="125"></iframe>
+        <iframe class="iframe-location" src="stats.html" id="stats" height=100 width="125"></iframe>
         <script>
             stats.src += location.search;
             overworld.href += location.search;

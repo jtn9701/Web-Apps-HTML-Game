@@ -417,8 +417,28 @@
 #valley-cat-3 {
     position: absolute;
     top: 70vh;
-    right: 70=50vw;
+    right: 50vw;
 }
+
+/* Audio Button */
+.audio-button-main-menu {
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+}
+.audio-button-general {
+    position: absolute;
+    bottom: 1vh;
+    left: 1vw;
+}
+
+/* i-frame location */
+.iframe-location {
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+}
+
 
 /* Temporary */
 #overrworld2_button_location {

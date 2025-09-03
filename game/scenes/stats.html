@@ -36,7 +36,10 @@
 
             var multiplier = isEvil === "1" ? 2 : 1;
 
-            ap.innerText = catsFound * multiplier;
+            // default to 0
+            var apGained = parseInt(queryString.get("ap")) || 0;
+
+            ap.innerText = (catsFound * multiplier);
             cats.innerText = catsFound + "/21";
         </script>
     </body>
