@@ -34,8 +34,6 @@
             var ap = queryString.get("cats").split("").slice(0, 21).map(bit => parseInt(bit)).filter(bit => bit === 1).length * (queryString.get("evil") === "1" ? 2 : 1);
 
             var minibossHP = 8;
-
-
             if (ap < minibossHP) {
                 document.getElementById("battleText").innerHTML = "You found one of the catnapper's goons!<br>But you don't have enough AP to attack him.";
                 document.getElementById("hpText").innerHTML = "You need to find more cats";
@@ -43,7 +41,9 @@
             } else {
                 document.getElementById("battleText").innerHTML = "You found one of the catnapper's goons!";
                 document.getElementById("hpText").innerHTML = `The enemy has ${minibossHP} hp. Click on him to attack.`;
+                document.getElementById("miniboss-closeup-position").style.pointerEvents = "auto";
             }
+
         </script>
         <script src="./../scripts/miniboss.js"> </script>
     </body>
