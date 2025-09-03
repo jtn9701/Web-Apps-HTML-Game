@@ -351,6 +351,9 @@
     right: 1vw;
     position: absolute;
 }
+.closeup-image-border-red {
+    border-color: crimson;
+}
 
 /* Home Cat Locations */
 #home-cat-1 {
@@ -437,6 +440,17 @@
     position: absolute;
     top: 1vh;
     left: 1vw;
+}
+
+/* Exit button styles */
+.exit-button-location{
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+}
+
+.exit-button-color {
+    background-color: rgb(241, 93, 93);
 }
 
 
