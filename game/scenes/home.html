@@ -10,14 +10,21 @@
             <a href="./../scenes/worldmap1.html" class="global-button-type overworld-button-location overworld-button-color clickable" id="overworld">
                 Overworld
             </a>
-            <img class="main-character-model clickable" id="home-cat-1" src="./../assets/HomeCat1.png">
-            <img class="main-character-model clickable" id="home-cat-2" src="./../assets/HomeCat2.png">
-            <img class="main-character-model clickable" id="home-cat-3" src="./../assets/HomeCat3.png">
+            <img class="main-character-model clickable" id="home-cat-1" 
+                src="./../assets/HomeCat1.png" 
+                onclick="changeCatsStringQueryParameter(0)">
+            <img class="main-character-model clickable" 
+                id="home-cat-2" src="./../assets/HomeCat2.png" 
+                onclick="changeCatsStringQueryParameter(1)">
+            <img class="main-character-model clickable" 
+                id="home-cat-3" src="./../assets/HomeCat3.png" 
+                onclick="changeCatsStringQueryParameter(2)">
         </div>
         <iframe src="stats.html" id="stats" height=100 width="125"></iframe>
         <script>
             stats.src += location.search;
             overworld.href += location.search;
         </script>
+        <script src="./../scripts/CatBitArray.js"></script>
     </body>
 </html>
