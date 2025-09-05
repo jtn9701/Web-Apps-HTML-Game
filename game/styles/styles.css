@@ -436,6 +436,22 @@
     z-index: 2;
 }
 
+/* Ending text box*/
+.ending-text-box{
+    position: absolute;
+    bottom: 35vh;
+    left: 25vw;
+    width: 50vw;
+    height: 15vh;
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: burlywood;
+    padding: 5px;
+    z-index: 2;
+}
 
 /* General closeup image */
 .closup-image {
@@ -544,30 +560,30 @@
 /* Cave Cat Locations */
 #cave-cat-1 {
     position: absolute;
-    bottom: 25vh;
-    left: 25vw;
+    bottom: 32vh;
+    left: 63vw;
 }
 #cave-cat-2 {
     position: absolute;
-    top: 25vh;
-    left: 40vw;
+    top: 68vh;
+    left: 50vw;
 }
 #cave-cat-3 {
     position: absolute;
-    top: 70vh;
-    right: 50vw;
+    top: 38vh;
+    right: 82vw;
 }
 
 /* Tundra Cat Locations */
 #tundra-cat-1 {
     position: absolute;
-    top: 30vh;
+    top: 25vh;
     left: 12vw;
 }
 #tundra-cat-2 {
     position: absolute;
     top: 70vh;
-    right: 20vw;
+    right: 21vw;
 }
 #tundra-cat-3 {
     position: absolute;
@@ -583,13 +599,13 @@
 }
 #desert-cat-2 {
     position: absolute;
-    top: 42vh;
-    right: 38.7vw;
+    top: 48vh;
+    right: 30vw;
 }
 #desert-cat-3 {
     position: absolute;
-    bottom: 23vh;
-    left: 40vw;
+    bottom: 77vh;
+    left: 39vw;
 }
 
 /* Audio Button */
