@@ -6,8 +6,28 @@
         <link rel="stylesheet" href="./../styles/styles.css">
     </head>
     <body>
-        <div>
-            <p>test caves</p>
+        <audio class="audio-button-general" loop autoplay="true" src="./../assets/audio/Caves-OctopathTraveller.mp3" type="audio/mp3"></audio>
+        <a href="./../../index.html" class="global-button-type exit-button-location exit-button-color clickable">Exit</a>
+        <div id="background-caves">
+            <a href="./../scenes/worldmap_2.html" class="global-button-type overworld2-button-location overworld2-button-color clickable" id="overrworld2">
+                Overworld 2
+            </a>
+            <img class="main-character-model clickable" id="cave-cat-1" src="./../assets/HomeCat1.png" onclick="changeCatsStringQueryParameter(15)">
+            <img class="main-character-model clickable" id="cave-cat-2" src="./../assets/HomeCat2.png"onclick="changeCatsStringQueryParameter(16)">
+            <img class="main-character-model clickable" id="cave-cat-3" src="./../assets/HomeCat3.png"onclick="changeCatsStringQueryParameter(17)">
         </div>
+        <iframe class="iframe-location" src="stats.html" id="stats" height=100 width="125"></iframe>
+        <script>
+            stats.src += location.search;
+            //overworld.href += location.search;
+            overrworld2.href += location.search;
+        </script>
+        <script src="./../scripts/CatBitArray.js"></script>
+        <script src="./../scripts/CatVisibility.js"></script>
+        <script>
+            document.getElementById("cave-cat-1").style.visibility = makeCatInvisibleIfFound(15);
+            document.getElementById("cave-cat-2").style.visibility = makeCatInvisibleIfFound(16);
+            document.getElementById("cave-cat-3").style.visibility = makeCatInvisibleIfFound(17);
+        </script>
     </body>
 </html>

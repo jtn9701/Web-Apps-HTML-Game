@@ -6,8 +6,52 @@
         <link rel="stylesheet" href="./../styles/styles.css">
     </head>
     <body>
-        <div>
-            <p>test shop</p>
+        <audio class="audio-button-general" loop autoplay="true" src="./../assets/audio/Shop-OctopathTraveller.mp3" type="audio/mp3"></audio>
+        <a href="./../../index.html" class="global-button-type exit-button-location exit-button-color clickable">Exit</a>
+        <div id="background-shop">
+            <a href="./../scenes/worldmap_2.html" class="global-button-type overworld2-button-location overworld2-button-color clickable" id="overrworld2">
+                Overworld 2
+            </a>
+            <div class="general-text-box">
+                    <p id="shopText">You sense a dark presence from the shadows... It extends an offer to you</p>
+                    <button id = "sacrificeHumanity" class="small-centered-button button-color-global clickable">Sacrifice your soul</button>
+                    <button id = "refuseShop" class="small-centered-button button-color-global clickable">Ignore the offer</button>
+                    <p id="resultText" class = "shop-choice-text-box" style="visibility: hidden"> </p>
+            </div>
         </div>
+        <iframe class="iframe-location" src="stats.html" id="stats" height=100 width="125"></iframe>
+        <script>
+            stats.src += location.search;
+            overrworld2.href += location.search;
+
+            var queryString = new URLSearchParams(location.search);
+            document.getElementById("sacrificeHumanity").onclick = function() {
+                // Update evil=1 in the query string
+                queryString.set("evil", "1");
+
+                // Update Overworld2 link with the new query string
+                overrworld2.href = "./../scenes/worldmap_2.html?" + queryString.toString();
+
+                // Update stats iframe with new query string
+                stats.src = "stats.html?" + queryString.toString();
+
+                // Show result text
+                document.getElementById("resultText").innerHTML = "You have sacrificed your soul... You feel more powerful but your cats look at you in fear.";
+            };
+
+            document.getElementById("refuseShop").onclick = function() {
+                queryString.set("evil", "0");
+                overrworld2.href = "./../scenes/worldmap_2.html?" + queryString.toString();
+                stats.src = "stats.html?" + queryString.toString();
+
+                document.getElementById("resultText").innerHTML =
+                    "You have refused the offer. Your cats remain loyal by your side.";
+            };
+
+            if (document.getElementById("sacrificeHumanity").onclick || document.getElementById("refuseShop").onclick) {
+                document.getElementById("resultText").style.visibility = "visible";
+            }
+
+        </script>
     </body>
 </html>

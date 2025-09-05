@@ -6,12 +6,23 @@
         <link rel="stylesheet" href="./../styles/styles.css">
     </head>
     <body>
+        <a href="./../../index.html" class="global-button-type exit-button-location exit-button-color clickable">Exit</a>
+        <audio class="audio-button-general" loop autoplay="true" src="./../assets/audio/Overworld2-OctopathTraveller.mp3" type="audio/mp3"></audio>
         <div id="background-overworld2">
-            <a href="./../scenes/caves.html" class="button-area-selector button-color-global clickable" id="button-worldmap2-caves">Caves</a>
-            <a href="./../scenes/tundra.html" class="button-area-selector button-color-global clickable" id="button-worldmap2-tundra">Tundras</a>
-            <a href="./../scenes/desert.html" class="button-area-selector button-color-global clickable" id="button-worldmap2-desert">Desert</a>
-            <a href="./../scenes/sacrifice-shop.html" class="button-area-selector button-color-global clickable" id="button-worldmap2-shop">Shop</a>
-            <a href="./../scenes/final.html" class="button-area-selector button-color-global clickable" id="button-worldmap2-final">Final Boss</a>
+            <a href="./../scenes/caves.html" class="button-area-selector button-color-global clickable" id="button_worldmap2_caves">Caves</a>
+            <a href="./../scenes/tundra.html" class="button-area-selector button-color-global clickable" id="button_worldmap2_tundra">Tundras</a>
+            <a href="./../scenes/desert.html" class="button-area-selector button-color-global clickable" id="button_worldmap2_desert">Desert</a>
+            <a href="./../scenes/sacrifice-shop.html" class="button-area-selector button-color-global clickable" id="button_worldmap2_shop">Shop</a>
+            <a href="./../scenes/final.html" class="button-area-selector button-color-global clickable" id="button_worldmap2_final">Final Boss</a>
         </div>
+        <iframe class="iframe-location" src="stats.html" id="stats" height=100 width="125"></iframe>
+        <script>
+            stats.src += location.search;
+            button_worldmap2_caves.href += location.search;
+            button_worldmap2_tundra.href += location.search;
+            button_worldmap2_desert.href += location.search;
+            button_worldmap2_shop.href += location.search;
+            button_worldmap2_final.href += location.search;
+        </script>
     </body>
 </html>

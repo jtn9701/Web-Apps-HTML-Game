@@ -126,6 +126,86 @@
     z-index: -1;                                        
 }
 
+#background-caves {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/Cave.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
+#background-tundra {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/Icy.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
+#background-desert {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/Desert.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
+#background-shop {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/Shop.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
+#background-final {           
+    display: grid;
+    place-items: center;                           
+    position: fixed;                                    
+    top: 0;                                             
+    left: 0;                                           
+    width: 100vw;                                       
+    height: 100vh;                                     
+    background-image: url(./../assets/ThroneRoom.png);  
+    background-size:cover;                             
+    background-position: center center;                 
+    background-repeat: no-repeat;    
+    background-color: burlywood;                   
+    z-index: -1;                                        
+}
+
 .modal {
     width: 30%;
     height: 60%;
@@ -192,6 +272,16 @@
     background-color: rgb(90, 179, 32);
 }
 
+.overworld2-button-location {
+    position: absolute;
+    bottom: 1vh;
+    left: 42vw;
+}
+
+.overworld2-button-color {
+    background-color: rgb(90, 179, 32);
+}
+
 .clickable {
     cursor: pointer;
 }
@@ -242,32 +332,33 @@
     bottom: 55vh;
     right: 54vw;
 }
-#button-worldmap2-caves {
+
+#button_worldmap2_caves {
     position: absolute;
     bottom: 45vh;
-    right: 80vw;
-}
-
-#button-worldmap2-tundra {
-    position: absolute;
-    bottom: 55vh;
-    right: 20vw;
-}
-#button-worldmap2-shop {
-    position: absolute;
-    bottom: 80vh;
     right: 60vw;
 }
-#button-worldmap2-final {
+
+#button_worldmap2_tundra {
     position: absolute;
-    bottom: 20vh;
-    right: 15vw;
+    bottom: 55vh;
+    right: 28vw;
+}
+#button_worldmap2_shop {
+    position: absolute;
+    bottom: 80vh;
+    right: 50vw;
+}
+#button_worldmap2_final {
+    position: absolute;
+    bottom: 18vh;
+    right: 30vw;
 }
 
-#button-worldmap2-desert {
+#button_worldmap2_desert {
     position: absolute;
-    bottom: 10vh;
-    right: 40vw;
+    bottom: 8vh;
+    right: 42vw;
 }
 
 #how-to-play-text-box {
@@ -328,6 +419,24 @@
     z-index: 2;
 }
 
+/* Sacrifice shop choice text box*/
+.shop-choice-text-box{
+    position: absolute;
+    bottom: 35vh;
+    left: 0vw;
+    width: 50vw;
+    height: 15vh;
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: burlywood;
+    padding: 5px;
+    z-index: 2;
+}
+
+
 /* General closeup image */
 .closup-image {
     height: 25vh;
@@ -355,6 +464,11 @@
     border-color: crimson;
 }
 #miniboss-closeup-position {
+    bottom: 35vh;
+    position: absolute;
+}
+
+#boss-closeup-position {
     bottom: 35vh;
     position: absolute;
 }
@@ -425,6 +539,57 @@
     position: absolute;
     top: 70vh;
     right: 50vw;
+}
+
+/* Cave Cat Locations */
+#cave-cat-1 {
+    position: absolute;
+    bottom: 25vh;
+    left: 25vw;
+}
+#cave-cat-2 {
+    position: absolute;
+    top: 25vh;
+    left: 40vw;
+}
+#cave-cat-3 {
+    position: absolute;
+    top: 70vh;
+    right: 50vw;
+}
+
+/* Tundra Cat Locations */
+#tundra-cat-1 {
+    position: absolute;
+    top: 30vh;
+    left: 12vw;
+}
+#tundra-cat-2 {
+    position: absolute;
+    top: 70vh;
+    right: 20vw;
+}
+#tundra-cat-3 {
+    position: absolute;
+    top: 10vh;
+    right: 15vw;
+}
+
+/* Desert Cat Locations */
+#desert-cat-1 {
+    position: absolute;
+    top: 60vh;
+    left: 20vw;
+}
+#desert-cat-2 {
+    position: absolute;
+    top: 42vh;
+    right: 38.7vw;
+}
+#desert-cat-3 {
+    position: absolute;
+    bottom: 23vh;
+    left: 40vw;
 }
 
 /* Audio Button */

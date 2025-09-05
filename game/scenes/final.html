@@ -6,8 +6,53 @@
         <link rel="stylesheet" href="./../styles/styles.css">
     </head>
     <body>
-        <div>
-            <p>test final</p>
+        <audio class="audio-button-general" loop autoplay="true" src="./../assets/audio/Finalboss-OctopathTraveller.mp3" type="audio/mp3"></audio>
+        <a href="./../../index.html" class="global-button-type exit-button-location exit-button-color clickable">Exit</a>
+        <div id="background-final">
+            <img class="closup-image closeup-image-border-red shake-hover shake-click clickable" id="boss-closeup-position" src="./../assets/VillainCloseup.png" onclick="decrementBossHP()">
+            <div class="general-text-box">
+                    <p id="battleText">You found the Great Hound of Shadows!</p>
+                    <p id="hpText">The enemy has 20 hp. Click on him to attack.</p>
+            </div>
         </div>
+        <iframe class="iframe-location" src="stats.html" id="stats" height=100 width="125"></iframe>
+
+        <!-- Ending boxes-->
+         <div id = "endingBox" class = "shop-choice-text-box" style = "display: none">
+             <p id="endingText"></p>
+         </div>
+
+        <script>
+            stats.src += location.search;
+            overrworld2 += location.search;
+
+            var queryString = new URLSearchParams(location.search);
+
+            // Same calculation as in stats
+            // TODO figure out how to get it from iframe
+            var ap = queryString.get("cats").split("").slice(0, 21).map(bit => parseInt(bit)).filter(bit => bit === 1).length * (queryString.get("evil") === "1" ? 2 : 1);
+
+            var bossHP = 20;
+            if (ap < bossHP) {
+                document.getElementById("battleText").innerHTML = "The Great Hound of Shadows towers over you... <br> But your army of cats tremble in fear. <br> You don't have enough power to fight.";
+                document.getElementById("hpText").innerHTML = "The Great Hound growls and scares all of your cats away. You have lost the war against dogs.";
+                document.getElementById("boss-closeup-position").style.pointerEvents = "none";
+
+                // Show ending box
+                //const endingText = document.getElementById("endingText");
+                //const endingBox = document.getElementById("endingBox");
+                //endingBox.style.display = "block";
+
+                // Force the "lose" ending
+                //endingText.innerHTML = "Failure Ending: The Great Hound growls and scatters your cats into the shadows.<br>" +
+                //"You are powerless to resist. Darkness swallows the land...";
+
+            } else {
+                document.getElementById("battleText").innerHTML = "The Great Hound of Shadows snarls at you!<br> Your cats charge at him!";
+                document.getElementById("hpText").innerHTML = `The enemy has ${bossHP} hp. Click on him to attack.`;
+                document.getElementById("boss-closeup-position").style.pointerEvents = "auto";
+            }
+        </script>
+        <script src="./../scripts/finalboss.js"> </script>
     </body>
 </html>
