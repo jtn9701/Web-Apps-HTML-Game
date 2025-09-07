@@ -2,6 +2,8 @@
 This game was created to teach us how to create HTML pages with CSS styling. </br>
 The game is a multi-HTML paged game where each scene is its own HTML page.</br>
 
+- GitHub Pages: https://jtn9701.github.io/Web-Apps-HTML-Game/
+
 ## Pitch
 In the game, your cat friend was kidnapped by the villain.</br>
 Your job is to go defeat the villain and save your friend.
