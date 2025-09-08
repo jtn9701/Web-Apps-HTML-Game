@@ -32,3 +32,11 @@ Jason and Johnny</br>
 AI</br>
 ### Music
 Octopath Traveller
+
+## Known Bugs
+- Audio restarts when a cat is clicked on due to the page refreshing with a new URL parameter.
+
+## Possible Future Additions
+- More animations to make the game feel more alive
+- Better styling to make the game more appealing to the eyes
+- More levels and puzzles
