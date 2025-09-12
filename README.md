@@ -27,11 +27,13 @@ to make the HTML files feel cleaner
 
 ## Credits
 ### Story
-Jason and Johnny</br>
+- Jason Nguyen
+- Johnny Vu
 ### Art
-AI</br>
+- AI
 ### Music
-Octopath Traveller
+- Octopath Traveler
+- We Lost - Lorien Testard
 
 ## Known Bugs
 - Audio restarts when a cat is clicked on due to the page refreshing with a new URL parameter.
